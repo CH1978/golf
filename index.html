@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>二高爾夫用品展示</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+
+    header {
+        background-color: #006400;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        max-width: 360px;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .card h2 {
+        margin: 1rem 0 0.5rem 0;
+        font-size: 1.3rem;
+        color: #006400;
+    }
+
+    .card p {
+        padding: 0 1rem 0.8rem;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .price {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #d2691e;
+        margin-bottom: 0.5rem;
+    }
+
+    .buy-btn {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 0.6rem 1.2rem;
+        background-color: #ff4500;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .buy-btn:hover {
+        background-color: #e03e00;
+    }
+
+    .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .image-grid img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 6px;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .image-grid img:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        .image-grid img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>二高爾夫用品展示</h1>
+</header>
+
+<div class="container">
+    <!-- 碳纖維高爾夫球桿 -->
+    <div class="card">
+        <div class="image-grid">
+            <img src="images/02/碳纖維高爾夫球桿 (1).jpg" alt="碳纖維球桿01">
+            <img src="images/02/碳纖維高爾夫球桿 (2).jpg" alt="碳纖維球桿02">
+            <img src="images/02/碳纖維高爾夫球桿 (3).jpg" alt="碳纖維球桿03">
+            <img src="images/02/碳纖維高爾夫球桿 (4).jpg" alt="碳纖維球桿04">
+            <img src="images/02/碳纖維高爾夫球桿 (5).jpg" alt="碳纖維球桿05">
+        </div>
+        <h2>碳纖維高爾夫球桿</h2>
+        <p>描述:輕量化設計，提升揮桿速度與精準度，多角度展示球桿細節。</p>
+        <p>項目:共14支桿</p>
+        <p>鐵桿推桿X1。S,P,3號-9號碳纖維各一隻。木桿1號X2 3號4號各一支</p>
+        <div class="price">NT$</div>
+ 
+    </div>
+
+    <!-- 鋼鐵高爾夫球桿 -->
+    <div class="card">
+        <div class="image-grid">
+            <img src="images/03/鋼鐵高爾夫球桿 (1).jpg" alt="鋼鐵球桿1">
+            <img src="images/03/鋼鐵高爾夫球桿 (2).jpg" alt="鋼鐵球桿2">
+            <img src="images/03/鋼鐵高爾夫球桿 (3).jpg" alt="鋼鐵球桿3">
+            <img src="images/03/鋼鐵高爾夫球桿 (4).jpg" alt="鋼鐵球桿4">
+        </div>
+        <h2>鋼鐵高爾夫球桿</h2>
+        <p>描述:耐用材質，穩定揮桿與長距離擊球，多角度展示桿身細節。</p>
+        <p>項目:共10支桿</p>
+        <p>鐵桿推桿X1。S,P,3號-9號各一隻。</p>
+        <div class="price">NT$</div>
+    </div>
+</div>
+
+    <!-- 高爾夫球 -->
+    <div class="card">
+        <div class="image-grid">
+            <img src="images/01/高爾夫球 (1).jpg" alt="高爾夫球01">
+            <img src="images/01/高爾夫球 (2).jpg" alt="高爾夫球02">
+            <img src="images/01/高爾夫球 (3).jpg" alt="高爾夫球03">
+            <img src="images/01/高爾夫球 (4).jpg" alt="高爾夫球04">
+            <img src="images/01/高爾夫球 (5).jpg" alt="高爾夫球05">
+            <img src="images/01/高爾夫球 (6).jpg" alt="高爾夫球06">
+            <img src="images/01/高爾夫球 (7).jpg" alt="高爾夫球07">
+            <img src="images/01/高爾夫球 (8).jpg" alt="高爾夫球08">
+            <img src="images/01/高爾夫球 (9).jpg" alt="高爾夫球09">
+            <img src="images/01/高爾夫球 (10).jpg" alt="高爾夫球10">
+            <img src="images/01/高爾夫球 (11).jpg" alt="高爾夫球11">
+            <img src="images/01/高爾夫球 (12).jpg" alt="高爾夫球12">
+            <img src="images/01/高爾夫球 (13).jpg" alt="高爾夫球13">
+            <img src="images/01/高爾夫球 (14).jpg" alt="高爾夫球14">
+        </div>
+        <h2>高爾夫球</h2>
+        <p>描述:適合各種球場與天氣條件，飛行穩定，多角度展示球面設計。</p>
+        <p>項目:各式各樣品牌 總共顆數>130顆</p>
+        <div class="price">NT$</div>
+        
+    </div>
+
+
+
+</body>
+</html>
